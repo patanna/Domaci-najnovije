@@ -1,0 +1,33 @@
+#include<iostream>
+#include"Domaci1.h"
+#include<string.h>
+using namespace std;
+
+int main() {
+	int duzina;
+	int izbor;
+	int bravionaflote;
+	bool kraj = false;
+	cout << "\n1.Unos naziva flote\n"
+		"2.Unos broja aviona flote\n"
+		"3.Unos pilota\n"
+		"4.Unos aviona\n"
+		"5.Postavljanje kapetana i kopilota, odnosno formiranje flote\n"
+		"6.Ispits flote i aviona sa najvecim brojem putnika\n"
+		"0.Kraj\n";
+	while (!kraj) {
+		cout << "Vas izbor?"<< endl;
+		cin >> izbor;
+		switch (izbor) {
+		case 1:void ime(string naziv); break;
+		case 2:cin>>bravionaflote; break;
+		case 3: break;
+		case 4:; break;
+		case 5:; break;
+		case 6:; break;
+		case 0:kraj = true;break;
+		default: cout << "Pogresan izbor, pokusajte ponovo!\n\n";  break;
+			}
+	}
+}
+
